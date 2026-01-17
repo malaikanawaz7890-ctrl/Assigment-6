@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Form</title>
+</head>
+<body>
+
+    <h1>Review Form</h1>
+
+    <form method="POST" action="#">
+
+        <!-- Account Details -->
+        <fieldset>
+            <legend>Account Details</legend>
+
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="Enter username" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter email" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
+        </fieldset>
+
+        <br>
+
+         <!-- Personal Details  -->
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="firstname">First Name:</label><br>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter first name"><br><br>
+
+            <label for="lastname">Last Name:</label><br>
+            <input type="text" id="lastname" name="lastname" placeholder="Enter last name"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob"><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Review Section -->
+        <fieldset>
+            <legend>Review Section</legend>
+
+            <label for="rating">Rating:</label><br>
+            <select id="rating" name="rating">
+                <option value="">Select rating</option>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="poor">Poor</option>
+            </select><br><br>
+
+            <label for="comments">Comments / Feedback:</label><br>
+            <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Write your feedback here..."></textarea><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Review">
+
+    </form>
+
+</body>
+</html>
